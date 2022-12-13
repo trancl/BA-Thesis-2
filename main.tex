@@ -1,0 +1,63 @@
+\documentclass[12pt]{report}
+%%%%% fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontspec}
+\setmainfont{Charis SIL}
+%%%%% graphics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\graphicspath{ {figures/}}
+\usepackage{longtable}
+%%%%% page setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%%%%% Biblatex package %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=biber,style=unified,maxcitenames=3,maxbibnames=99,natbib=true]{biblatex}
+%%%%% caption %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{caption}
+\usepackage{subcaption}
+%%%%% Linguistics packages %%%%%%%%%%%%%%%%%%%%
+\usepackage{tipa}
+\renewcommand{\tipa}[1]{\textipa{#1}}
+%%%%% Math package %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{urwchancal}
+\usepackage{amsfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Thesis Title}
+\author{Cong Luan Tran}
+\date{? ? 2022}
+
+
+\addbibresource{references.bib}
+\begin{document}
+
+\input{titlepage}
+
+\chapter*{Abstract}
+Abstract goes here
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Methodology}
+\input{chapters/chapter02}
+
+\chapter{Result}
+\input{chapters/chapter03}
+
+\chapter{Conclusion}
+\input{chapters/conclusion}
+
+\appendix
+\chapter{Full Distribution Table}
+\input{chapters/AppendixA}
+
+\chapter{Full List of Segments}
+\include{chapters/AppendixB.tex}
+
+\printbibliography
+\end{document}
