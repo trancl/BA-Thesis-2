@@ -1,23 +1,22 @@
 \section{Language Sampling}
 
-The sampling method I use is, as mentioned, semi-convenience. It is ``semi-'' because the language is chosen randomly from the 100-languages sample of WALS. 
-I will draw a random 20-languages list from the 100-languages sample, then I skim through the reference grammar of the language given in WALS to see if it contains the information I want. 
-If the reference grammar is not accessible or it does not provide the information on the consonantal distribution for the language, I will attempt to find the data in other papers about the language. 
-Should that also fail, the language will be replaced by another language (also chosen randomly from the 100-languages sample) from a language family not already presented in the list.
+The sampling method I use is semi-convenience. It is ``semi-'', and not purely convenience, because the languages are chosen randomly from the 100-language sample of WALS. 
+I draw a random 20-language list from the 100-language sample, then I skim through the reference grammar of the language given in WALS to see if it contains the information I want. 
+If the reference grammar is not accessible or it does not provide information on the consonantal distribution for the language, I attempt to find the data in other papers about the language. 
+When that also fails, the language is replaced by another language (also chosen randomly from the 100-language sample) from a language family not already presented in the list.
 
 \section{Data Treatment}
 
 \subsection{Phonetics or Phonology?}
 
-This is the question about the nature of the data that will be compared. 
-Phonetic data, in the sense of acoustic signals and articulatory gestures, are probably the most `raw' data that can be used, while phonemes are already subjected to the analysis and perspective of the author who wrote the grammars. 
-Phonemic analysis can produce very different ways of categorizing sounds of a language, which may be justified for the language in question but may not fit for cross-linguistics comparison. 
-The ideal raw phonetic data is nearly impossible to find in most reference grammars I have read, so it is also not practical to use them.
-Therefore, I decide to take a practical middle ground and record the data available at the allophonic level. For example, if English happens to be in my list then the `clear L' [l] and the `dark L' [ɫ] will be coded as two distinct sounds, one is only allowed in the onset and the other only in the coda. 
+Phonetic data, in the sense of acoustic signals and articulatory gestures, are probably the most `raw' data that can be used, while phonemes are already subjected to the analysis and perspective of the authors who wrote these grammars. 
+Phonemic analysis, on the other hand, can produce very different ways of categorizing sounds of a language, which may be justified for the language in question but may not fit for cross-linguistics comparison. 
+However, the ideal raw phonetic data is nearly impossible to find in most reference grammars I have read, so it is also not practical to use them.
+Therefore, I decided to take a practical middle ground and record the data available at the allophonic level. For example, if English happens to be on my list then the `clear L' [l] and the `dark L' [ɫ] will be coded as two distinct sounds, one is only allowed in the onset, and the other only in the coda. 
 
 \subsection{Cluster and segmentation}
 
-Consonant clusters will not be considered in this thesis, individual segments in a cluster will be counted separately. However, I will respect the segmentation analysis of the author. Thus, if an author insists that, for instance, [ts] is one segment in this language, it will be coded as a sound distinct from both [t] and [s].
+Consonant clusters will not be considered in this thesis and individual segments in a cluster will be counted separately. However, I will respect the segmentation analysis of the author. Thus, if an author insists that, for instance, [ts] is one segment in this language, it will be coded as a sound distinct from both [t] and [s].
 
 \subsection{Exclusion of certain allophonic variation}
 
@@ -25,11 +24,11 @@ Since the purpose of this thesis is to investigate the distributional asymmetry 
 
 \subsection{Data Encoding}
 
-Three positions in the syllable will be distinguishedː initial, medial, and final. Initial and final means onset and coda, and medial is for the intervocalic environment. 
-If a segment is allowed in a position, it will be coded as 1, otherwise 0. However, if a language prohibit all final consonants, the segments will be coded as ``N/A'' for this position instead.
+Three positions in the syllable will be distinguishedː initial, medial, and final. Initial and final means onset and coda, and medial means the intervocalic environment. 
+If a segment is allowed in a position, it will be coded as 1, otherwise 0. However, if a language prohibits all final consonants, the segments will be coded as ``N/A'' for this position instead.
 
 \par 
-Following the Maximal Onset Principle (MOP), if the author does not provide any information for the medial position, segments in this position will be assume to share the same distribution with the initial position. This assumption does not mean that I believe MOP to be truth, it is a practical decision to fill in the gap in the data.
+In my experience, sometimes the author writes nothing about intervocalic phonotactics. So, following the Maximal Onset Principle (MOP), if the author does not provide any information for the medial position, segments in this position will be assumed to share the same distribution with the initial position. This assumption does not mean that I believe MOP to be true, but it is a practical decision to fill in the gap in the data.
 
 \begin{table}[h]
     \centering
@@ -47,6 +46,6 @@ Following the Maximal Onset Principle (MOP), if the author does not provide any 
 
 \subsection{Data Analysis}
 
-For each segments in each positions the number of ``1'' will be divided by the sum of the number of ``1'' and ``0'', yielding a restriction percentage where 1.00 means not restricted while 0.00 means completely not allowed. 
+For each segment in each position the number of ``1'' will be divided by the sum of the number of ``1'' and ``0'', yielding a restriction percentage where 1.00 means not restricted while 0.00 means completely not allowed. 
 
 
